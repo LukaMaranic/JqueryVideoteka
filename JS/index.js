@@ -134,7 +134,7 @@ $(document).ready(function() {
 
             function dohvatiAPI(nazivFilma) {
                 $.ajax({
-                    url: "http://www.omdbapi.com/?t=" + nazivFilma + "&apikey=7e81ab4f",
+                    url: "https://www.omdbapi.com/?t=" + nazivFilma + "&apikey=7e81ab4f",
                     success: function(data) {
                         $("#detaljiNaziv").text(nazivFilma);
                         $("#detaljiGodina").text(data.Year);
